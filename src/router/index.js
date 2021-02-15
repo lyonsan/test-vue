@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Output from '@/components/Output'
 import Profile from '@/components/Profile'
+import Skill from '@/components/Skill'
 
 Vue.use(VueRouter)
 
@@ -14,7 +15,7 @@ export default new VueRouter({
       component: HelloWorld
     },
     {
-      path: '/outputs',
+      path: '/output',
       name: 'Output',
       component: Output
     },
@@ -22,6 +23,11 @@ export default new VueRouter({
       path: '/profile',
       name: 'Profile',
       component: Profile
+    },
+    {
+      path: '/skill',
+      name: 'Skill',
+      component: Skill
     }
   ]
 })

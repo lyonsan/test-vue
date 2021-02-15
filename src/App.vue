@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <tab-menu></tab-menu>
-    <router-view/>
+    <transition mode="out-in">
+      <router-view/>
+    </transition>
   </div>
 </template>
 
@@ -19,12 +21,21 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 #app {
-  font-family: 'Avenir', Helvetica, Arial,'Open Sans', sans-serif;
+  font-family: 'Avenir', Helvetica, Arial,'Open Sans','Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
+.v-enter-active, .v-leave-active {
+  transition: opacity .5s;
+}
+
+.v-enter, .v-leave-to {
+  opacity: 0;
+}
+
 </style>

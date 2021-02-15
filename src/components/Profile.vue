@@ -1,9 +1,21 @@
 <template>
   <div class="profile">
+    <div class="profile-title">
+      <h1>profile</h1>
+    </div>
     <div class="profile-body">
-      <p>ハンドルネーム：{{ name }}</p>
-      <p>やっていること：{{ text }}</p>
-      <p>年齢：{{ age }}</p>
+      <div class="profile-parts">
+        <div class="parts-title">ハンドルネーム：</div>
+        <div class="parts-body">{{ name }}</div>
+      </div>
+      <div class="profile-parts">
+        <div class="parts-title">やっていること：</div>
+        <div class="parts-body">{{ text }}</div>
+      </div>
+      <div class="profile-parts">
+        <div class="parts-title">年齢：</div>
+        <div class="parts-body">{{ age }}</div>
+      </div>
     </div>
   </div>
 </template>
@@ -25,13 +37,30 @@ export default {
 <style scoped>
 
 div.profile {
+  margin: 0 auto;
   padding-top: 50px;
+  width:550px;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 div.profile-body {
   text-align: left;
 }
+
+.profile-parts {
+  display: flex;
+  padding: 15px 0;
+}
+
+.parts-title {
+  width: 30%;
+}
+
+.parts-body {
+  width: 70%
+}
+
 </style>

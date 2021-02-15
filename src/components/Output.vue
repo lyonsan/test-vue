@@ -1,8 +1,11 @@
 <template>
   <div class="output">
-    <div class="content" v-for="i in 6" :key=i>
-      <h3>{{ name }}</h3>
-      <p>{{ text }}</p>
+    <div class="output-title">
+      <h1>output</h1>
+    </div>
+    <div class="content" v-for="output in outputs" :key=output>
+      <h3>{{ output.name }}</h3>
+      <p>{{ output.text }}</p>
     </div>
   </div>
 </template>
@@ -12,8 +15,16 @@ export default {
   name: 'Output',
   data() {
     return {
-      name: 'カメラアプリを作成した',
-      text: 'このような意図で作成しました。ここをこのように工夫しました。ここが難しかったです。今後はこういった機能を追加したいです。'
+      outputs: [
+      {
+        name: 'studyreport',
+        text: '仲間と学習報告を行うこと、学習メモを取れるアプリです。'
+      },
+      {
+        name: 'portfolioサイト',
+        text: '私の自己紹介とポートフォリオをまとめたサイトです。'
+      }
+      ]
     }
   }
 }
@@ -24,23 +35,22 @@ export default {
 
 div.output {
   text-align: center;
+  margin: 0 auto;
+  width: 550px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 div.content {
-  background-color: #eee;
-  display: inline-block;
-  margin: 10px;
-  width: 30%;
+  margin: 30px;
 }
 
-h3 {
-  color: white;
-}
 
 p {
   width: 90%;
   display: inline-block;
-  text-align: left;
 }
 
 </style>
