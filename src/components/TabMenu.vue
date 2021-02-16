@@ -87,6 +87,10 @@ a {
   li {
     margin: 0;
   }
+
+  a {
+    font-size: 20px;
+  }
 }
 
 </style>
