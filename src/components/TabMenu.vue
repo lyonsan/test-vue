@@ -48,7 +48,6 @@ li {
   margin-left:10px;
   margin-right:10px;
   font-size: 14px;
-  border-radius: 8px;
   position: relative;
 }
 
@@ -70,5 +69,24 @@ a {
   line-height: 50px;
 }
 
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 600px) {
+  div {
+    display: flex;
+    justify-content: center;
+  }
+
+  ol {
+    width: 90vw;
+    justify-content: space-around;
+  }
+
+  li {
+    margin: 0;
+  }
+}
 
 </style>

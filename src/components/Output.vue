@@ -53,4 +53,26 @@ p {
   display: inline-block;
 }
 
+@media (max-width: 1024px) {
+  div.output {
+    text-align: center;
+    margin: 0 auto;
+    width: 80vw;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  div.content {
+    margin: 30px;
+  }
+
+
+  p {
+    width: 90%;
+    display: inline-block;
+  }
+}
+
 </style>

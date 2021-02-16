@@ -51,5 +51,20 @@ p {
   display: inline-block;
 }
 
+@media (max-width: 1024px) {
+  div.skill {
+    text-align: center;
+    margin: 0 auto;
+    width: 80vw;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  div.content {
+    margin: 0;
+  }
+}
 
 </style>

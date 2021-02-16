@@ -47,7 +47,7 @@ div.profile {
 }
 
 div.profile-body {
-  text-align: left;
+  text-align: center;
 }
 
 .profile-parts {
@@ -63,4 +63,58 @@ div.profile-body {
   width: 70%
 }
 
+@media (max-width: 1024px) {
+  div.profile {
+    width:80vw;
+  }
+
+  div.profile-body {
+    text-align: left;
+  }
+
+  .profile-parts {
+    display: flex;
+    padding: 15px 0;
+  }
+
+  .parts-title {
+    width: 30%;
+  }
+
+  .parts-body {
+    width: 70%
+  }
+
+}
+
+@media (max-width: 1024px) {
+  div.profile {
+    margin: 0 auto;
+    padding-top: 50px;
+    width:80vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  div.profile-body {
+    text-align: center;
+  }
+
+  .profile-parts {
+    display: flex;
+    padding: 15px 0;
+  }
+
+  .parts-title {
+    width: 30%;
+  }
+
+  .parts-body {
+    padding-left: 5px;
+    width: 70%;
+  }
+
+}
 </style>

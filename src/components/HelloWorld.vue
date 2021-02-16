@@ -29,4 +29,29 @@ div.hello {
   flex-direction: column;
   justify-content: center;
 }
+
+@media (max-width: 1024px) {
+  div.hello {
+    margin: 0 auto;
+    padding-top: 50px;
+    width:100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  div.hello {
+    margin: 0 auto;
+    padding-top: 50px;
+    width:80vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 </style>
